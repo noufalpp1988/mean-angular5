@@ -20,8 +20,8 @@ app.use('/book', book);
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-var dbUrlRemote = 'mongodb://testuserdb:Test1988@ds253871.mlab.com:53871/mean-angular5-books';
-//var dbUrlRemote = process.env.MONGOLAB_URI
+//var dbUrlRemote = 'mongodb://testuserdb:Test1988@ds253871.mlab.com:53871/mean-angular5-books';
+var dbUrlRemote = process.env.MONGOLAB_URI;
 var dbUrlLocal = 'mongodb://localhost/mean-angular5';
 
 // // connecting local db
